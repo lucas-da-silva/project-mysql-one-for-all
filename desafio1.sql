@@ -4,6 +4,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
   CREATE TABLE SpotifyClone.plans(
       plan_id INT PRIMARY KEY AUTO_INCREMENT,
+      price DECIMAL(5,2) NOT NULL,
       plan VARCHAR(50) NOT NULL
   ) engine = InnoDB;
 
@@ -51,12 +52,12 @@ DROP DATABASE IF EXISTS SpotifyClone;
       FOREIGN KEY (artist_id) REFERENCES SpotifyClone.artists(artist_id)
   ) engine = InnoDB;
 
-  INSERT INTO SpotifyClone.plans (plan)
+  INSERT INTO SpotifyClone.plans (plan, price)
   VALUES
-    ('gratuito'),
-    ('familiar'),
-    ('universitário'),
-    ('pessoal');
+    ('gratuito', 0),
+    ('familiar', 7.99),
+    ('universitário', 5.99),
+    ('pessoal', 6.99);
 
   INSERT INTO SpotifyClone.users (name, plan_id)
   VALUES
@@ -65,9 +66,9 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ('Ada Lovelace', 2),
     ('Martin Fowler', 2),
     ('Sandi Metz', 2),
-    ('Paulo Freire', 2),
+    ('Paulo Freire', 3),
     ('Bell Hooks', 3),
-    ('Christopher Alexander', 3),
+    ('Christopher Alexander', 4),
     ('Judith Butler', 4),
     ('Jorge Amado', 4);
 
