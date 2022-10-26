@@ -94,35 +94,35 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
   INSERT INTO SpotifyClone.songs (name, album_id, duration_seconds)
   VALUES
-    ('Samba em Paris', 6, 267),
-    ('VIRGOS GROOVE', 1, 369),
-    ('Feeling Good', 8, 100),
-    ('O Medo de Amar é o Medo de Ser Livre', 5, 207),
-    ('Como Nossos Pais', 4, 105),
-    ('Under Pressure', 3, 152),
     ('BREAK MY SOUL', 1, 279),
-    ('Dont Stop Me Now', 2, 203),
-    ('The Bards Song', 2, 244),
-    ('ALIEN SUPERSTAR', 1, 116);
+    ("VIRGO’S GROOVE", 1, 369),
+    ('ALIEN SUPERSTAR', 1, 116),
+    ("Don’t Stop Me Now", 2, 203),
+    ('Under Pressure', 3, 152),
+    ('Como Nossos Pais', 4, 105),
+    ('O Medo de Amar é o Medo de Ser Livre', 5, 207),
+    ('Samba em Paris', 6, 267),
+    ("The Bard’s Song", 2, 244),
+    ('Feeling Good', 8, 100);
 
   INSERT INTO SpotifyClone.reproduction_history (user_id, song_id, date)
   VALUES
-    (1, 1, '2022-02-28 10:45:55'),
+    (1, 8, '2022-02-28 10:45:55'),
     (1, 2, '2020-05-02 05:30:35'),
-    (1, 3, '2020-03-06 11:22:33'),
-    (2, 3, '2022-08-05 08:05:17'),
-    (2, 4, '2020-01-02 07:40:33'),
-    (3, 3, '2020-11-13 16:55:13'),
+    (1, 10, '2020-03-06 11:22:33'),
+    (2, 10, '2022-08-05 08:05:17'),
+    (2, 7, '2020-01-02 07:40:33'),
+    (3, 10, '2020-11-13 16:55:13'),
     (3, 2, '2020-12-05 18:38:30'),
-    (4, 1, '2021-08-15 17:10:10'),
-    (5, 1, '2022-01-09 01:44:33'),
-    (5, 6, '2020-08-06 15:23:43'),
-    (6, 4, '2017-01-24 00:31:17'),
-    (6, 7, '2017-10-12 12:35:20'),
-    (7, 8, '2011-12-15 22:30:49'),
-    (8, 8, '2012-03-17 14:56:41'),
+    (4, 8, '2021-08-15 17:10:10'),
+    (5, 8, '2022-01-09 01:44:33'),
+    (5, 5, '2020-08-06 15:23:43'),
+    (6, 7, '2017-01-24 00:31:17'),
+    (6, 1, '2017-10-12 12:35:20'),
+    (7, 4, '2011-12-15 22:30:49'),
+    (8, 4, '2012-03-17 14:56:41'),
     (9, 9, '2022-02-24 21:14:22'),
-    (10, 10, '2015-12-13 08:30:22');
+    (10, 3, '2015-12-13 08:30:22');
 
   INSERT INTO SpotifyClone.user_artists (user_id, artist_id)
   VALUES
